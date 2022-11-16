@@ -1,0 +1,40 @@
+* React Js makes API req to some endpoint (/api/notes) to express js framework.Express Js takes that api and interprets it and sends it to nodeJs web server which uses a library called mongoose which provides a lot of queries so we can fetch data from MongoDB database.It takes data from database and through our web-server it sends it to our web-framework which interprets it in form of json data and sends it back to react js.
+
+* Requests - GET(to get data from database), POST, PUT(update by providing id), DELETE(requires id).
+
+* npm init initialises our directory so we can start developing our nodeJs application.It creates package.json which will store all of our npm packages.
+
+* npm i express to install express js package in our package.json. It installs node_modules which contain all of our dependencies. It also created package-lock json file.It contains dependencies of our other dependencies.i.e. it contains all of the packages that are dependent on express or vice-versa.
+
+* server.js will be our entry point. (node server.js to start server on given port).
+
+- require is used to import packages from our node_modules or package.json.
+
+* Whenever we try to fetch data from our database or backend, API endpoint is the route where data is served.
+
+- req.params.id to fetch id from url.
+
+* .env file contains all of our secret information related to our application.eg:API key, port number, passwords.(npm i dotenv to use packeage and create a file .env).
+// ${PORT} is to be surrounded by ``
+
+* nodemon automatically restarts our web-server when we make changes to file.
+
+- create our react-js app npm create-react-app frontend.
+
+** jsx is html like syntax used by react-js that extends ecma script so that html like text can co-exist with react code.
+-- now with the help of react we are putting html inside of js file.
+-- we use class in html, but in react we use classname.
+-- we use {} to write javascript. <div>{variable}</div>.
+-- jsx elements must have a parent element. Use react fragments <></>
+
+.function App() {
+  return <div className="App">Hello World</div>;
+}
+===[Arrow function]
+.const App = () => {
+  return <div className="App">Hello World</div>;
+};
+// if we use {} we need to write return statement.
+.const App = () => <div className="App">Hello World</div>;
+
+in git-ignore we add .env and frontend/node_modules and /node_modules
