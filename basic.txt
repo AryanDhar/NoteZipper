@@ -38,3 +38,4 @@
 .const App = () => <div className="App">Hello World</div>;
 
 in git-ignore we add .env and frontend/node_modules and /node_modules
+move git ignore to root folder.
